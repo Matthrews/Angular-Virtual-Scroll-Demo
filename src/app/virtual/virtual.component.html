@@ -1,0 +1,8 @@
+<h1>Virtual Scroll</h1>
+<hr>
+<cdk-virtual-scroll-viewport (scrolledIndexChange)="cambio()" itemSize="10" class="list-container">
+<div *cdkVirtualFor="let personas of personas; let i=index,let conteo=count">
+Item {{i}}
+</div>
+
+</cdk-virtual-scroll-viewport>
