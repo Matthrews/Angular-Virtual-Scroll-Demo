@@ -1,4 +1,16 @@
-.list-container{
-    height: 250px;
-    width: 500px;
+.list-container {
+  height: 250px;
+  width: 600px;
+}
+
+.list-container .list-item {
+  padding: 8px 16px;
+}
+
+.list-container .list-item.is-even {
+  background: #fff;
+}
+
+.list-container .list-item.is-odd {
+  background: #ddd;
 }

@@ -1,8 +1,8 @@
-<h1>Virtual Scroll</h1>
+<h1>Angular Virtual Scroll Demo</h1>
 <hr>
-<cdk-virtual-scroll-viewport (scrolledIndexChange)="cambio()" itemSize="10" class="list-container">
-<div *cdkVirtualFor="let personas of personas; let i=index,let conteo=count">
-Item {{i}}
-</div>
-
+<h5>Total: {{ personas.length }}</h5>
+<cdk-virtual-scroll-viewport (scrolledIndexChange)="onScrolledIndexChange()" itemSize="10" class="list-container">
+  <div *cdkVirtualFor="let personas of personas; let i=index,let conteo=count,even as isEven; odd as isOdd">
+    <div class="list-item" [class.is-odd]="isOdd" [class.is-even]="isEven">Item {{ i + 1 }}</div>
+  </div>
 </cdk-virtual-scroll-viewport>

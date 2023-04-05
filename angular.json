@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularscroll"
+    }
+  },
+  "defaultProject": "angularscroll",
+  "cli": {
+    "analytics": false
+  }
 }
